@@ -20,6 +20,12 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 	
+	<!-- freeMarker support configuration -->
+	<bean id="freeMarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/ftl/"></property>
+		<property name="defaultEncoding" value="utf-8"></property>
+	</bean>
+	
 	<!-- request static resources configuration -->
 	<!-- <mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
 	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources> -->
